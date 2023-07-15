@@ -1,0 +1,510 @@
+Archive member included because of file (symbol)
+
+d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
+                              ./LCD_DR/LCD_PROG.o (__divmodhi4)
+d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o (exit)
+d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                              ./main.o (__do_copy_data)
+d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              ./EXIT/EXIT_PROGRAM.o (__do_clear_bss)
+d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                              d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o) (__udivmodhi4)
+
+Allocating common symbols
+Common symbol       size              file
+
+Global_call_back_int1
+                    0x2               ./EXIT/EXIT_PROGRAM.o
+Global_call_back_int2
+                    0x2               ./EXIT/EXIT_PROGRAM.o
+Global_call_back_int0
+                    0x2               ./EXIT/EXIT_PROGRAM.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+LOAD ./LCD_DR/LCD_PROG.o
+LOAD ./KEYPADDR/KEYPAD_PROG.o
+LOAD ./GIE/GIE_PROGRAM.o
+LOAD ./EXIT/EXIT_PROGRAM.o
+LOAD ./DIO/DIO_PROG.o
+LOAD ./ADC/ADC_PROGRAM.o
+LOAD ./main.o
+LOAD d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0xcd6
+ *(.vectors)
+ .vectors       0x00000000       0x54 d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x16 d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00000060                __do_copy_data
+ .init4         0x00000076       0x10 d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000076                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000086        0x8 d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x0000008e        0x4 d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x0000008e                __vector_12
+                0x0000008e                __bad_interrupt
+                0x0000008e                __vector_6
+                0x0000008e                __vector_11
+                0x0000008e                __vector_13
+                0x0000008e                __vector_17
+                0x0000008e                __vector_19
+                0x0000008e                __vector_7
+                0x0000008e                __vector_5
+                0x0000008e                __vector_4
+                0x0000008e                __vector_9
+                0x0000008e                __vector_15
+                0x0000008e                __vector_8
+                0x0000008e                __vector_14
+                0x0000008e                __vector_10
+                0x0000008e                __vector_18
+                0x0000008e                __vector_20
+ .text          0x00000092        0x0 ./LCD_DR/LCD_PROG.o
+ .text          0x00000092        0x0 ./KEYPADDR/KEYPAD_PROG.o
+ .text          0x00000092        0x0 ./GIE/GIE_PROGRAM.o
+ .text          0x00000092        0x0 ./EXIT/EXIT_PROGRAM.o
+ .text          0x00000092        0x0 ./DIO/DIO_PROG.o
+ .text          0x00000092        0x0 ./ADC/ADC_PROGRAM.o
+ .text          0x00000092        0x0 ./main.o
+ .text          0x00000092        0x0 d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
+ .text          0x00000092        0x0 d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x00000092        0x0 d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000092        0x0 d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00000092        0x0 d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                0x00000092                . = ALIGN (0x2)
+ *(.text.*)
+ .text.LCD_SendCharacter
+                0x00000092       0x5c ./LCD_DR/LCD_PROG.o
+                0x00000092                LCD_SendCharacter
+ .text.LCD_SendNumber
+                0x000000ee       0xb8 ./LCD_DR/LCD_PROG.o
+                0x000000ee                LCD_SendNumber
+ .text.LCD_SendString
+                0x000001a6       0x26 ./LCD_DR/LCD_PROG.o
+                0x000001a6                LCD_SendString
+ .text.LCD_SendCommand
+                0x000001cc       0x5c ./LCD_DR/LCD_PROG.o
+                0x000001cc                LCD_SendCommand
+ .text.LCD_SetCoursorPosition
+                0x00000228       0x14 ./LCD_DR/LCD_PROG.o
+                0x00000228                LCD_SetCoursorPosition
+ .text.LCD_SaveCustomCharacter
+                0x0000023c       0x3e ./LCD_DR/LCD_PROG.o
+                0x0000023c                LCD_SaveCustomCharacter
+ .text.LCD_Init
+                0x0000027a       0x72 ./LCD_DR/LCD_PROG.o
+                0x0000027a                LCD_Init
+ .text.KeyPadAskForFloat
+                0x000002ec       0x26 ./KEYPADDR/KEYPAD_PROG.o
+                0x000002ec                KeyPadAskForFloat
+ .text.KeyPadAskForSign
+                0x00000312       0x26 ./KEYPADDR/KEYPAD_PROG.o
+                0x00000312                KeyPadAskForSign
+ .text.KeyPadAskForResult
+                0x00000338       0x26 ./KEYPADDR/KEYPAD_PROG.o
+                0x00000338                KeyPadAskForResult
+ .text.KeyPadGetPresedOperation
+                0x0000035e       0x38 ./KEYPADDR/KEYPAD_PROG.o
+                0x0000035e                KeyPadGetPresedOperation
+ .text.KeyPadGetPresedKey
+                0x00000396       0x84 ./KEYPADDR/KEYPAD_PROG.o
+                0x00000396                KeyPadGetPresedKey
+ .text.KeyPadIniit
+                0x0000041a       0x12 ./KEYPADDR/KEYPAD_PROG.o
+                0x0000041a                KeyPadIniit
+ .text.GIE_Enable
+                0x0000042c        0x8 ./GIE/GIE_PROGRAM.o
+                0x0000042c                GIE_Enable
+ .text.GIE_Disable
+                0x00000434        0x8 ./GIE/GIE_PROGRAM.o
+                0x00000434                GIE_Disable
+ .text.EXIT_EnableExtint
+                0x0000043c       0x24 ./EXIT/EXIT_PROGRAM.o
+                0x0000043c                EXIT_EnableExtint
+ .text.EXIT_DisableExtint
+                0x00000460       0x24 ./EXIT/EXIT_PROGRAM.o
+                0x00000460                EXIT_DisableExtint
+ .text.EXTI_SetCallBack
+                0x00000484       0x2c ./EXIT/EXIT_PROGRAM.o
+                0x00000484                EXTI_SetCallBack
+ .text.__vector_1
+                0x000004b0       0x4e ./EXIT/EXIT_PROGRAM.o
+                0x000004b0                __vector_1
+ .text.__vector_2
+                0x000004fe       0x4e ./EXIT/EXIT_PROGRAM.o
+                0x000004fe                __vector_2
+ .text.__vector_3
+                0x0000054c       0x4e ./EXIT/EXIT_PROGRAM.o
+                0x0000054c                __vector_3
+ .text.EXIT_Init
+                0x0000059a       0x3e ./EXIT/EXIT_PROGRAM.o
+                0x0000059a                EXIT_Init
+ .text.DIO_SetPinDirection
+                0x000005d8       0xe6 ./DIO/DIO_PROG.o
+                0x000005d8                DIO_SetPinDirection
+ .text.DIO_SetPortDirection
+                0x000006be       0x22 ./DIO/DIO_PROG.o
+                0x000006be                DIO_SetPortDirection
+ .text.DIO_SetPinValue
+                0x000006e0       0xe6 ./DIO/DIO_PROG.o
+                0x000006e0                DIO_SetPinValue
+ .text.DIO_SetPortValue
+                0x000007c6       0x22 ./DIO/DIO_PROG.o
+                0x000007c6                DIO_SetPortValue
+ .text.DIO_GetPinValue
+                0x000007e8       0x40 ./DIO/DIO_PROG.o
+                0x000007e8                DIO_GetPinValue
+ .text.DIO_GetPortValue
+                0x00000828       0x24 ./DIO/DIO_PROG.o
+                0x00000828                DIO_GetPortValue
+ .text.DIO_TooglePinValue
+                0x0000084c       0x6a ./DIO/DIO_PROG.o
+                0x0000084c                DIO_TooglePinValue
+ .text.ADC_vodInit
+                0x000008b6       0x18 ./ADC/ADC_PROGRAM.o
+                0x000008b6                ADC_vodInit
+ .text.ADC_u16GetDigitalValue
+                0x000008ce       0x30 ./ADC/ADC_PROGRAM.o
+                0x000008ce                ADC_u16GetDigitalValue
+ .text.ADC_SetCallBack
+                0x000008fe        0xa ./ADC/ADC_PROGRAM.o
+                0x000008fe                ADC_SetCallBack
+ .text.__vector_16
+                0x00000908       0x52 ./ADC/ADC_PROGRAM.o
+                0x00000908                __vector_16
+ .text.ADC_vodEnable
+                0x0000095a        0x4 ./ADC/ADC_PROGRAM.o
+                0x0000095a                ADC_vodEnable
+ .text.ADC_vodDisable
+                0x0000095e        0x4 ./ADC/ADC_PROGRAM.o
+                0x0000095e                ADC_vodDisable
+ .text.ADC_vodEnableInterupt
+                0x00000962        0x4 ./ADC/ADC_PROGRAM.o
+                0x00000962                ADC_vodEnableInterupt
+ .text.ADC_vodDisableInterupt
+                0x00000966        0x4 ./ADC/ADC_PROGRAM.o
+                0x00000966                ADC_vodDisableInterupt
+ .text.main     0x0000096a      0x31a ./main.o
+                0x0000096a                main
+ .text.libgcc   0x00000c84       0x26 d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
+                0x00000c84                __divmodhi4
+                0x00000c84                _div
+ .text.libgcc   0x00000caa        0x0 d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000caa        0x0 d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000caa        0x0 d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000caa       0x28 d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                0x00000caa                __udivmodhi4
+                0x00000cd2                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000cd2        0x0 d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00000cd2                exit
+                0x00000cd2                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000cd2        0x4 d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000cd6                _etext = .
+
+.data           0x00800060       0x9a load address 0x00000cd6
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 ./LCD_DR/LCD_PROG.o
+ .data          0x00800060        0x0 ./KEYPADDR/KEYPAD_PROG.o
+ .data          0x00800060        0x0 ./GIE/GIE_PROGRAM.o
+ .data          0x00800060        0x0 ./EXIT/EXIT_PROGRAM.o
+ .data          0x00800060        0x0 ./DIO/DIO_PROG.o
+ .data          0x00800060        0x0 ./ADC/ADC_PROGRAM.o
+ .data          0x00800060       0x9a ./main.o
+ .data          0x008000fa        0x0 d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
+ .data          0x008000fa        0x0 d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x008000fa        0x0 d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x008000fa        0x0 d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .data          0x008000fa        0x0 d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x008000fa                . = ALIGN (0x2)
+                0x008000fa                _edata = .
+                0x008000fa                PROVIDE (__data_end, .)
+
+.bss            0x008000fa        0x8
+                0x008000fa                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x008000fa        0x0 d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x008000fa        0x0 ./LCD_DR/LCD_PROG.o
+ .bss           0x008000fa        0x0 ./KEYPADDR/KEYPAD_PROG.o
+ .bss           0x008000fa        0x0 ./GIE/GIE_PROGRAM.o
+ .bss           0x008000fa        0x0 ./EXIT/EXIT_PROGRAM.o
+ .bss           0x008000fa        0x0 ./DIO/DIO_PROG.o
+ .bss           0x008000fa        0x0 ./ADC/ADC_PROGRAM.o
+ .bss           0x008000fa        0x0 ./main.o
+ .bss           0x008000fa        0x0 d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
+ .bss           0x008000fa        0x0 d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x008000fa        0x0 d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x008000fa        0x0 d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x008000fa        0x0 d:/avr/embedded system/sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ *(.bss*)
+ .bss.global_ADCCallback
+                0x008000fa        0x2 ./ADC/ADC_PROGRAM.o
+ *(COMMON)
+ COMMON         0x008000fc        0x6 ./EXIT/EXIT_PROGRAM.o
+                0x008000fc                Global_call_back_int1
+                0x008000fe                Global_call_back_int2
+                0x00800100                Global_call_back_int0
+                0x00800102                PROVIDE (__bss_end, .)
+                0x00000cd6                __data_load_start = LOADADDR (.data)
+                0x00000d70                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800102        0x0
+                0x00800102                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800102                PROVIDE (__noinit_end, .)
+                0x00800102                _end = .
+                0x00800102                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(pr17_smart_home.elf elf32-avr)
+LOAD linker stubs

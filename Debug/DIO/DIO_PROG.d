@@ -1,0 +1,11 @@
+DIO/DIO_PROG.o DIO/DIO_PROG.o: ../DIO/DIO_PROG.c \
+  ../DIO/../LIB/STD_TYPES.h ../DIO/../LIB/BIT_MATH.h ../DIO/DIO_PRIV.h \
+  ../DIO/DIO_CONFIG.h
+
+../DIO/../LIB/STD_TYPES.h:
+
+../DIO/../LIB/BIT_MATH.h:
+
+../DIO/DIO_PRIV.h:
+
+../DIO/DIO_CONFIG.h:
